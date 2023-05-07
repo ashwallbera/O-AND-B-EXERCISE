@@ -25,20 +25,34 @@ public class Money {
     /**
      * @param other currency must equal to current object
     * */
-
     public Money add(Money other){
-        if(!isEqualCurrency(other.currency))
-            throw new CurrencyException("currency must be the same");
+        isEqualCurrency(other.currency);
         return new Money(currency,this.dollar+other.dollar,this.cents+other.cents);
     }
 
-   private Boolean isEqualCurrency(Currency other){
-        return this.currency.equals(other);
+    /**
+     * @param other currency must equal to current object
+     * cents and dollar must <= this
+     * */
+    public Money subtract(Money other){
+        isEqualCurrency(other.currency);
+        lessThan(other);
+        return new Money(currency,this.dollar-other.dollar,this.cents-other.cents);
+    }
+
+   private void isEqualCurrency(Currency other){
+        if(!this.currency.equals(other))
+            throw new CurrencyException("currency must be the same");
    }
     private void notNull(Currency currency){
         if (currency == null)
             throw new NullPointerException("currency cannot be null");
 
+    }
+
+    private void lessThan(Money other){
+        if(!(other.cents <= this.cents) || !(other.dollar <= this.dollar))
+            throw new SubtractOperationException("other dollar and cents must be less than to "+this);
     }
     private void notNegative(int number){
         if (number < 0)

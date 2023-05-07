@@ -2,6 +2,7 @@ package com.orangeandbronze.money.test;
 
 import com.orangeandbronze.money.CurrencyException;
 import com.orangeandbronze.money.Money;
+import com.orangeandbronze.money.SubtractOperationException;
 import org.junit.jupiter.api.Test;
 
 import static com.orangeandbronze.money.Currency.*;
@@ -64,4 +65,31 @@ public class MoneyTest {
         assertThrows(IllegalArgumentException.class,
                 () -> {new Money(PHP, 3,-5);});
     }
+
+    @Test
+    void subtract_positive_values_cents_and_dollar_other_money_less_than_current(){
+        //Given PHP 2.00 and PHP 1.00
+        Money current = new Money(PHP, 2,0);
+        Money other = new Money(PHP, 1,0);
+        //When subtract method called
+        Money actual = current.subtract(other);
+        //The result should be PHP 1.00
+        assertEquals(new Money(PHP,1,0),actual);
+    }
+
+    @Test
+    void subtract_positive_values_cents_and_dollar_other_money_greater_than_current(){
+        //Given PHP 2.00 and PHP 3.00
+        Money current = new Money(PHP, 2,0);
+        Money other = new Money(PHP, 3,0);
+        //When subtract method called
+        //The result should be
+        // SubtractOperationException
+        assertThrows(SubtractOperationException.class, () ->{
+            current.subtract(other);
+        });
+
+    }
+
+
 }
