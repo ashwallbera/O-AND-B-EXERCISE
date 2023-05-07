@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- findByStudentThatHasSections -->
+<dataset>
+	<students student_number="1" lastname="Mouse" firstname="Mickey"/>
+	<subjects subject_id="MATH11" />
+	<subjects subject_id="PHILO1" />
+	<subjects subject_id="COM1" />
+	<subjects subject_id="PHYSICS71" />
+	<subjects subject_id="KAS1" />
+	<subjects subject_id="NOCONFLICT1" />
+	<subjects subject_id="NOCONFLICT2" />
+	<subjects subject_id="NOCONFLICT3" />
+	<rooms room_name="AVR1" capacity="10"/>
+	<rooms room_name="MATH105" capacity="10"/>
+	<rooms room_name="IP103" capacity="10"/>
+	<rooms room_name="AS113" capacity="10"/>
+	<sections section_id="MHX123" schedule="MTH 08:30-10:00" subject_id="MATH11" room_name="MATH105" version="0"/>
+	<sections section_id="TFX555" schedule="TF 10:00-11:30" subject_id="PHILO1" room_name="AS113" version="0"/>
+	<sections section_id="MHW432" schedule="MTH 13:00-14:30" subject_id="COM1" room_name="AVR1" version="0"/>
+	<sections section_id="TFZ321" schedule="TF 14:30-16:00" subject_id="PHYSICS71" room_name="IP103" version="0"/>
+	<sections section_id="MHY987" schedule="MTH 11:30-13:00" subject_id="KAS1" room_name="AVR1" version="0"/>
+	<sections section_id="NOCONFLICT1" schedule="WS 08:30-10:00" subject_id="NOCONFLICT1" room_name="MATH105" version="0"/>
+	<sections section_id="NOCONFLICT2" schedule="WS 10:00-11:30" subject_id="NOCONFLICT2" room_name="AS113" version="0"/>
+	<enlistments student_number="1" section_id="MHX123"/>
+	<enlistments student_number="1" section_id="TFX555"/>
+	<enlistments student_number="1" section_id="MHW432"/>
+</dataset>

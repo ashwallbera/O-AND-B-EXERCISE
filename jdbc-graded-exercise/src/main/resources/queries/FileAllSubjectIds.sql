@@ -1,0 +1,1 @@
+SELECT subject_id FROM subjects;

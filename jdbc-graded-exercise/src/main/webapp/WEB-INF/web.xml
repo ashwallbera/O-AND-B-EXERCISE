@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<error-page>
+		<error-code>404</error-code>
+		<location>/not_found.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/server_error.html</location>
+	</error-page>
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/prelude.jspf</include-prelude>
+			<include-coda>/WEB-INF/coda.jspf</include-coda>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>

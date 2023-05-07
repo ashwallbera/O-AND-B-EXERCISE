@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<faculty faculty_number="1" lastname="Prime" firstname="Optimus" version="0"/>
+	<faculty faculty_number="2" lastname="Lightyear" firstname="Buzz" version="0"/>
+	<faculty faculty_number="3" lastname="Kent" firstname="Clark" version="0"/>
+	<admins />
+	<rooms />
+	<subjects />
+	<sections />
+	<students />
+	<enlistments />
+</dataset>

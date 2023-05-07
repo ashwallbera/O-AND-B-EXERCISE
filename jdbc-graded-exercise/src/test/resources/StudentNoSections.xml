@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- findStudentNoEnlistements -->
+<dataset>
+	<students student_number="1" lastname="Mouse" firstname="Mickey"/>
+	<sections/>
+	<enlistments/>
+</dataset>

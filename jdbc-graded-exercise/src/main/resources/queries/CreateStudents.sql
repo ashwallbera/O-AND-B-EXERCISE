@@ -1,0 +1,1 @@
+INSERT INTO students (student_number,lastname,firstname,middle_name) VALUES (?,?,?,?)

@@ -1,0 +1,1 @@
+SELECT faculty_number, lastname, firstname FROM faculty;

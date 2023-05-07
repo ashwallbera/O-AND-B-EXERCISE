@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<faculty faculty_number="1" lastname="Prime" firstname="Optimus" version="0"/>
+	<faculty faculty_number="2" lastname="Lightyear" firstname="Buzz" version="0"/>
+	<faculty faculty_number="3" lastname="Kent" firstname="Clark" version="0"/>
+	<faculty faculty_number="4" lastname="Stark" firstname="Tony" version="0"/>
+	<admins id="1" firstname="Natasha" lastname="Romanova"/>
+	<admins id="2" firstname="Bruce" lastname="Banner"/>
+	<admins id="3" firstname="Charles" lastname="Xavier"/>
+	<rooms room_name="AVR1" capacity="5" version="2"/>
+	<rooms room_name="MATH105" capacity="10" version="4"/>
+	<rooms room_name="IP103" capacity="15" version="6"/>
+	<rooms room_name="AS113" capacity="20" version="8"/>
+	<subjects subject_id="MATH11" />
+	<subjects subject_id="PHILO1" />
+	<subjects subject_id="COM1" />
+	<subjects subject_id="PHYSICS71" />
+	<subjects subject_id="KAS1" />	
+	<sections section_id="MHX123" subject_id="MATH11" schedule="MTH 08:30-10:00" room_name="MATH105" faculty_number="1" version="0"/>
+	<sections section_id="TFX555" subject_id="PHILO1" schedule="TF 10:00-11:30" room_name="AS113" faculty_number="2" version="0"/>
+	<sections section_id="MHW432" subject_id="COM1" schedule="MTH 08:30-10:00" room_name="AVR1" faculty_number="3" version="0"/>
+	<sections section_id="TFZ321" subject_id="PHYSICS71" schedule="TF 14:30-16:00" room_name="IP103" faculty_number="4" version="0"/>
+	<sections section_id="MHY987" subject_id="COM1" schedule="MTH 11:30-13:00" room_name="AVR1" faculty_number="1" version="0"/>
+	<sections section_id="TF888" subject_id="COM1" schedule="TF 11:30-13:00" room_name="AVR1" faculty_number="3" version="0"/>
+	<students/>
+	<enlistments/>
+</dataset>
