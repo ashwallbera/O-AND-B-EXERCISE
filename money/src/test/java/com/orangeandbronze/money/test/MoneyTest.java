@@ -32,7 +32,7 @@ public class MoneyTest {
     }
 
     @Test
-    void toString_positive_values_no_cents_same_currency(){
+    void toString_add_positive_values_no_cents_same_currency(){
         //Given PHP 3.00 and PHP 2.00
         Money m1 = new Money(PHP, 3,0);
         Money m2 = new Money(PHP, 2,0);
@@ -55,7 +55,7 @@ public class MoneyTest {
     }
 
     @Test
-    void add_negative_values_cents_and_dollar_same_currency(){
+    void constructor_negative_values_cents_and_dollar_same_currency(){
         //Given PHP -2.00 and PHP 3.-5
         //When constructor invoked
         //Then result should throw IllegalArgumentException
